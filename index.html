@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gestor de Tareas</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">
+            <h1>Mis tareas</h1>
+            <button class="logout" onclick="logout()">Salir</button>
+        </div>
+
+        <div class="task-input">
+            <input id="taskInput" placeholder="Escribí una tarea...">
+            <button onclick="addTask()">+</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+    <script src="/app.js"></script>
+</body>
+
+</html>
