@@ -1,3 +1,30 @@
+function showAlert(message, type = "success") {
+    const container = document.getElementById("alertContainer");
+
+    if (!container) {
+        console.error("No existe alertContainer");
+        return;
+    }
+
+    const wrapper = document.createElement("div");
+
+    wrapper.innerHTML = `
+    <sl-alert variant="${type}" closable duration="3000">
+        <sl-icon slot="icon" name="info-circle"></sl-icon>
+        ${message}
+    </sl-alert>
+    `;
+
+    const alert = wrapper.firstElementChild;
+    container.appendChild(alert);
+
+    // Espera a que el componente esté listo
+    setTimeout(() => {
+        alert.toast();
+    }, 50);
+}
+
+
 function login() {
     const user = document.getElementById("user").value;
     const pass = document.getElementById("pass").value;
@@ -7,14 +34,14 @@ function login() {
     const found = users.find(u => u.user === user && u.pass === pass);
 
     if (!found) {
-        alert("Usuario o contraseña incorrectos!!");
+        showAlert("Usuario o contraseña incorrectos!!", "danger");
         return;
     }
 
     // guardar sesión
     localStorage.setItem("currentUser", JSON.stringify(found));
 
-    alert("Bienvenido " + user);
+    showAlert("Bienvenido " + user, "success");
 
     // redirigir DESPUÉS del alert
     setTimeout(() => {
