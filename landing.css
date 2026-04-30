@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f0f12;
+    color: white;
+    line-height: 1.5;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    position: sticky;
+}
+
+.nav-container{
+    width: auto;
+    padding: 6px 16px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.btn-small {
+    background: #2d2dff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 40px;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    color: #b3b3b3;
+    margin-bottom: 25px;
+}
+
+.hero-buttons a {
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background: #2d2dff;
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    border: 1px solid #444;
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.hero-card {
+    background: #1a1a1f;
+    padding: 20px;
+    border-radius: 16px;
+    width: 280px;
+}
+
+.mockup h3 {
+    margin-bottom: 10px;
+}
+
+.mockup ul {
+    list-style: none;
+}
+
+.mockup li {
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 40px;
+    gap: 20px;
+}
+
+.feature {
+    background: #16161b;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    text-align: center;
+}
+
+.feature p {
+    color: #aaa;
+    margin-top: 10px;
+}
+
+.cta {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta p {
+    color: #aaa;
+    margin: 10px 0 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+}
