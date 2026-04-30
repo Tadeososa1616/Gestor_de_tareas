@@ -81,5 +81,5 @@ function save() {
 // LOGOUT
 function logout() {
     localStorage.removeItem("currentUser");
-    window.location.href = "login.html";
+    window.location.href = "landing.html";
 }
