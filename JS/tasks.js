@@ -186,7 +186,7 @@ function save() {
 // LOGOUT
 function logout() {
     localStorage.removeItem("currentUser");
-    window.location.href = "/index.html";
+    window.location.href = "index.html";
 }
 
 // INICIAR
