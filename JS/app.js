@@ -81,5 +81,12 @@ function save() {
 // LOGOUT
 function logout() {
     localStorage.removeItem("currentUser");
-    window.location.href = "index.html";
+
+    const isGithub = window.location.hostname.includes("github.io");
+
+    if (isGithub){
+        window.location.href = "/Gestor_de_tareas/index.html";
+    } else {
+        window.location.href = "./index.html";
+    }   
 }
