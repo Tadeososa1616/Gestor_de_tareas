@@ -192,7 +192,7 @@ function logout() {
         window.location.href = "/Gestor_de_tareas/index.html";
     } else {
         window.location.href = "./index.html";
+    }
 }
-
 // INICIAR
 render();
