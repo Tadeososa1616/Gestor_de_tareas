@@ -3,10 +3,15 @@
 }
 
 body {
+    overflow-x: hidden;
     margin: 0;
     font-family: Arial;
     background: #0f0f0f;
     color: white;
+}
+
+input{
+    font-size: 16px;
 }
 
 .filters {
