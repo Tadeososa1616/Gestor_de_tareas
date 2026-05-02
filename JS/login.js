@@ -45,7 +45,7 @@ function login() {
 
     // redirigir DESPUÉS del alert
     setTimeout(() => {
-        window.location.href = "index.html";
+        window.location.href = "app.html";
     }, 300);
 }
 
@@ -77,6 +77,6 @@ function register() {
 
     // redirigir directo a la app
     setTimeout(() => {
-        window.location.href = "index.html";
+        window.location.href = "app.html";
     }, 300);
 }
