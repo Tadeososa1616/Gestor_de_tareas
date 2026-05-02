@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     background-color: #2e2e2e;
 }
@@ -9,8 +13,6 @@ body {
     margin-top: 50px;
     border-radius: 10px;
 }
-
-
 
 /*LOGIN Y REGISTRO*/
 .form_main {
@@ -72,7 +74,7 @@ body {
 }
 
 #button {
-    position: rellogout;
+    position: relative;
     width: 100%;
     border: 2px solid #8000ff;
     background-color: #8000ff;
@@ -123,19 +125,22 @@ body {
 
 .app {
     max-width: 400px;
+    width: 100%;
     margin: auto;
-    padding: 20px;
+    padding: 15px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
 .task-input {
     display: flex;
+    gap: 8px;
     margin: 20px 0;
 }
 
@@ -193,4 +198,19 @@ li:hover {
     border: none;
     cursor: pointer;
     font-size: 16px;
+}
+
+@media (max-width: 600px){
+    .app{
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .category{
+        padding: 10px;
+    }
+    li {
+        font-size: 14px;
+    }
 }
