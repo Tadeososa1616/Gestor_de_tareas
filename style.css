@@ -10,6 +10,8 @@ body {
     border-radius: 10px;
 }
 
+
+
 /*LOGIN Y REGISTRO*/
 .form_main {
     width: 280px;
@@ -70,7 +72,7 @@ body {
 }
 
 #button {
-    position: relative;
+    position: rellogout;
     width: 100%;
     border: 2px solid #8000ff;
     background-color: #8000ff;
@@ -83,25 +85,6 @@ body {
     margin: 10px;
     cursor: pointer;
     overflow: hidden;
-}
-
-#button::after {
-    content: "";
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.253);
-    height: 100%;
-    width: 150px;
-    top: 0;
-    left: -200px;
-    border-bottom-right-radius: 100px;
-    border-top-left-radius: 100px;
-    filter: blur(10px);
-    transition-duration: .5s;
-}
-
-#button:hover::after {
-    transform: translateX(600px);
-    transition-duration: .5s;
 }
 
 .signupContainer {
@@ -150,13 +133,6 @@ body {
     align-items: center;
 }
 
-.logout {
-    background: transparent;
-    border: 1px solid #444;
-    color: white;
-    padding: 5px 10px;
-    cursor: pointer;
-}
 
 .task-input {
     display: flex;
